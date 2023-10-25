@@ -1,0 +1,125 @@
+{
+  "positions" : [ {
+    "id" : "/Start",
+    "x" : 290,
+    "y" : 673
+  }, {
+    "id" : "/Hello",
+    "x" : 290,
+    "y" : 1097
+  }, {
+    "id" : "/Bye",
+    "x" : 290,
+    "y" : 1499
+  }, {
+    "id" : "/NoMatch",
+    "x" : 290,
+    "y" : 1911
+  }, {
+    "id" : "/KnowledgeBase",
+    "name" : "KnowledgeBase",
+    "x" : 290,
+    "y" : 2346
+  }, {
+    "id" : "/mail",
+    "name" : "mail",
+    "x" : 668,
+    "y" : 2566
+  }, {
+    "id" : "/Если не хочем на почту",
+    "name" : "Если не хочем на почту",
+    "x" : 628,
+    "y" : 2963
+  }, {
+    "id" : "/Успешная отправка",
+    "name" : "Успешная отправка",
+    "x" : 1086,
+    "y" : 2500
+  }, {
+    "id" : "/Ошибка при отправке",
+    "name" : "Ошибка при отправке",
+    "x" : 1081,
+    "y" : 2839
+  }, {
+    "id" : "/Кнопочки для отправки письма",
+    "name" : "Кнопочки для отправки письма",
+    "x" : 686,
+    "y" : 2174
+  }, {
+    "id" : "/emailButtons",
+    "x" : 797,
+    "y" : 586
+  }, {
+    "id" : "/mail/success",
+    "name" : "success",
+    "x" : 0,
+    "y" : 0
+  }, {
+    "id" : "/mail/email_error",
+    "name" : "email_error",
+    "x" : 0,
+    "y" : 0
+  }, {
+    "id" : "/email",
+    "name" : "email",
+    "x" : 973,
+    "y" : 2665
+  }, {
+    "id" : "/Language",
+    "x" : 290,
+    "y" : 1536
+  }, {
+    "id" : "/Russian",
+    "x" : 1070,
+    "y" : 812
+  }, {
+    "id" : "/English",
+    "x" : 1070,
+    "y" : 1536
+  }, {
+    "id" : "/Chinese",
+    "x" : 1070,
+    "y" : 2023
+  }, {
+    "id" : "/NewState",
+    "name" : "NewState",
+    "x" : 1329,
+    "y" : 2777
+  }, {
+    "id" : "/Chinese/Hello",
+    "x" : 290,
+    "y" : 651
+  }, {
+    "id" : "/Chinese/Bye",
+    "x" : 290,
+    "y" : 1053
+  }, {
+    "id" : "/Chinese/NoMatch",
+    "x" : 290,
+    "y" : 1499
+  }, {
+    "id" : "/Chinese/KnowledgeBase",
+    "x" : 290,
+    "y" : 1968
+  }, {
+    "id" : "/Chinese/noEmail",
+    "x" : 1850,
+    "y" : 1290
+  }, {
+    "id" : "/Chinese/emailButtons",
+    "x" : 1070,
+    "y" : 1499
+  }, {
+    "id" : "/Chinese/inputQuestion",
+    "x" : 1850,
+    "y" : 1708
+  }, {
+    "id" : "/Chinese/inputEmail",
+    "x" : 2630,
+    "y" : 1708
+  }, {
+    "id" : "/Chinese/email",
+    "x" : 3410,
+    "y" : 1708
+  } ]
+}

@@ -1,96 +1,331 @@
 {
-    "project": {
-        "id": "zb-cailapub",
-        "name": "zb-cailapub",
-        "folder": "/platform"
+  "project" : {
+    "id" : "chavo-1000111458-cST",
+    "name" : "chavo-1000111458-cST",
+    "folder" : "/platform"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : true,
+      "zflPatternsEnabled" : true
     },
-    "settings": {
-        "language": "ru",
-        "spellingCorrection": false,
-        "classificationAlgorithm": "sts",
-        "validation": {
-            "phraseValidationEnabled": true,
-            "answerValidationEnabled": true,
-            "phraseValidationThreshold": 0.5,
-            "answerValidationThreshold": 0.8
-        },
-        "timezone": "Europe/Moscow",
-        "extendedSettings": {
-            "tokenizerEngine": "mystem",
-            "useShared": false
-        }
+    "shared" : false,
+    "validation" : {
+      "phraseValidationEnabled" : true,
+      "answerValidationEnabled" : true,
+      "phraseValidationThreshold" : 0.5,
+      "answerValidationThreshold" : 0.8
+    }
+  },
+  "intents" : [ {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Где на Куршской косе можно разместиться с палаткой?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Где на Куршской косе можно разместиться с палаткой?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
     },
-    "intents": [
-        {
-            "path": "/пока",
-            "description": null,
-            "answer": null,
-            "customData": null,
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "пока",
-                    "entities": null
-                }
-            ],
-            "patterns": null,
-            "slots": null
-        },
-        {
-            "path": "/привет",
-            "description": null,
-            "answer": null,
-            "customData": null,
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "привет",
-                    "entities": null
-                }
-            ],
-            "patterns": null,
-            "slots": null
-        }
-    ],
-    "entities": [],
-    "enabledSystemEntities": [
-        "duckling.number",
-        "duckling.time",
-        "duckling.duration",
-        "duckling.phone-number",
-        "duckling.email",
-        "duckling.url"
-    ],
-    "systemEntities": [
-        {
-            "name": "duckling.number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.time",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.duration",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.phone-number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.email",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.url",
-            "version": "v2",
-            "enabled": true
-        }
-    ]
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Если приехать вечером и разместиться на Куршской косе на ночлег, нужно ли на следующий день снова покупать входной билет в парк?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Если приехать вечером и разместиться на Куршской косе на ночлег, нужно ли на следующий день снова покупать входной билет в парк?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/пока",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/привет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как попасть на экскурсию на Куршскую косу?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как попасть на экскурсию?"
+    }, {
+      "text" : "Экскурсия на Куршскую косу"
+    }, {
+      "text" : "Как попасть на экскурсию на Куршскую косу?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/В какие дни и в какое время национальный парк «Куршская коса» открыт для посещения?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "В какие дни и в какое время национальный парк «Куршская коса» открыт для посещения?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как попасть на Куршскую косу? Мы приехали на КПП в Зеленоградск, куда идти дальше?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как попасть на Куршскую косу? Мы приехали на КПП в Зеленоградск, куда идти дальше?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Нужно ли каждый раз покупать входной билет при въезде на территорию национального парка?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Нужно ли каждый раз покупать входной билет при въезде на территорию национального парка?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.EnglishQ/Root/Новый вопрос",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "New question"
+    }, {
+      "text" : "Новый вопрос"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как покупать входные билеты посетителям, въезжающим на рейсовых автобусах, и в каких случаях им можно не покупать билеты?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как покупать входные билеты посетителям, въезжающим на рейсовых автобусах, и в каких случаях им можно не покупать билеты?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.EnglishQ",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ],
+  "faq" : [ {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Где на Куршской косе можно разместиться с палаткой?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Организовывать туристическую стоянку на Куршской косе запрещено! В дневное время можно ставить палатку или параван на берегу моря для защиты от солнца и ветра. Ставить палатку для ночлега можно только в специально организованных для этого местах: на территории турбаз, туркемпингов и гостевых домов, на пикниковом месте возле озера Чайка (32-й км).",
+      "markup" : "plain",
+      "key" : "_rjwzyc706"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Если приехать вечером и разместиться на Куршской косе на ночлег, нужно ли на следующий день снова покупать входной билет в парк?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Не нужно, билет действует трое суток при условии непрерывного пребывания на территории национального парка. Билет необходимо сохранять до момента выезда с Куршской косы.",
+      "markup" : "plain",
+      "key" : "_pfjfyf87t"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как попасть на экскурсию на Куршскую косу?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Чтобы посетить национальный парк с экскурсией, нужно заранее записаться в группу в любой из калининградских турфирм или заказать индивидуальную экскурсию на автомобиле/микроавтобусе с выездом из Калининграда или курортных городов области. \nЭкскурсию по залам Визит-центра и тематические занятия для детских групп можно заказать, позвонив в отдел экопросвещения 8 4012 310028.",
+      "markup" : "plain",
+      "key" : "_q9uo1ymuh"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/В какие дни и в какое время национальный парк «Куршская коса» открыт для посещения?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Национальный парк открыт для посещения 24/7 – круглосуточно и круглогодично. Визит-центр, расположенный на 14 км косы, открыт с 9 до 17 часов: с мая по сентябрь ежедневно, с октября по апрель – со среды по воскресенье. \nПолевой стационар кольцевания птиц открыт для посещения с апреля по октябрь с 10 до 17 часов.",
+      "markup" : "plain",
+      "key" : "_dqs870tey"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как попасть на Куршскую косу? Мы приехали на КПП в Зеленоградск, куда идти дальше?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Для осмотра основных достопримечательностей на Куршской косе требуется транспорт. Можно перемещаться на автомобиле, туристическом или рейсовом автобусе. Есть парковки. Экскурсию в составе туристической группы нужно заказывать заранее в любой из калининградских турфирм, рейсовый автобус № 210 отправляется от вокзала в Зеленоградске, в летний сезон из Калининграда на косу ходит автобус № 593.",
+      "markup" : "plain",
+      "key" : "_imkvm04a2"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Нужно ли каждый раз покупать входной билет при въезде на территорию национального парка?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Да, каждый въезд на территорию национального парка необходимо оплачивать и покупать входной билет.",
+      "markup" : "plain",
+      "key" : "_a0xwkjson"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.EnglishQ/Root/Новый вопрос",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "",
+      "markup" : "plain"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как покупать входные билеты посетителям, въезжающим на рейсовых автобусах, и в каких случаях им можно не покупать билеты?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Пассажиры рейсовых автобусов могут купить входной билет только онлайн – на сайте национального парка для перехода на сайт онлайн-оплаты нужно нажать «оплатить посещение». Для посещения экологических троп, маршрутов и других объектов национального парка это нужно сделать обязательно. Если пассажир едет на Куршскую косу с иными целями, например, в какой-то из поселков, покупать входной билет, в летний сезон из Калининграда на косу ходит автобус № 593.",
+      "markup" : "plain",
+      "key" : "_ajq7auwmi"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.EnglishQ",
+    "replies" : [ ]
+  } ],
+  "skills" : [ ]
 }
