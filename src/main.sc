@@ -49,7 +49,7 @@ theme: /
             
             a: Хотите сменить язык бота?
             buttons:
-                "Нет, продолжить на русском" -> /Russian/newQ
+                "Продолжить на русском" -> /Russian/newQ
                 "Сменить язык" -> /Language
     
         state: NoMatch

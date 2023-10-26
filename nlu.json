@@ -59,6 +59,42 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
+    "path" : "/KnowledgeBase/FAQ.Chinese/Root/庫爾斯沙嘴上的哪些地方可以帶帳篷露營？",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "庫爾斯沙嘴上的哪些地方可以帶帳篷露營？"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Chinese/Root/如果晚上抵達並在庫爾斯沙嘴過夜，是否需要隔天再次購買園區門票？",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "如果晚上抵達並在庫爾斯沙嘴過夜，是否需要隔天再次購買園區門票？"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Chinese/Root/搭乘普通公車到達的遊客如何購買門票，在什麼情況下不能購買門票？",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "搭乘普通公車到達的遊客如何購買門票，在什麼情況下不能購買門票？"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
     "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Где на Куршской косе можно разместиться с палаткой?",
     "enabled" : true,
     "shared" : false,
@@ -305,6 +341,42 @@
     },
     "patterns" : [ ],
     "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Chinese/Root/如何前往庫爾斯沙嘴？ 我們到達了澤列諾格拉茨克的檢查站，接下來要去哪裡？",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "如何前往庫爾斯沙嘴？ 我們到達了澤列諾格拉茨克的檢查站，接下來要去哪裡？"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Chinese/Root/如何前往庫爾斯沙嘴遊覽？",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "如何前往庫爾斯沙嘴遊覽？"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Chinese/Root/每次進入國家公園都需要買票嗎？",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "每次進入國家公園都需要買票嗎？"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
   } ],
   "entities" : [ ],
   "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
@@ -413,6 +485,48 @@
     "enabled" : false
   } ],
   "faq" : [ {
+    "intentPath" : "/KnowledgeBase/FAQ.Chinese/Root/庫爾斯沙嘴上的哪些地方可以帶帳篷露營？",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "禁止在庫爾斯沙嘴組織旅遊停留！ 白天，您可以在海邊搭起帳篷或拖車遮擋陽光和風。 您只能在專為此組織的地方搭帳篷過夜：在旅遊中心、旅遊營地和賓館境內，在柴卡湖（第 32 公里）附近的野餐地點。",
+      "markup" : "plain",
+      "key" : "_qdffnrd5n"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/4C4m3XnKUPTCMGaa.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"GOOGLE_ASSISTANCE\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Organizing a tourist stop on the Curonian.mp3",
+      "uploadDate" : 1698340160018,
+      "key" : "_n8zdgn4od"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Chinese/Root/如果晚上抵達並在庫爾斯沙嘴過夜，是否需要隔天再次購買園區門票？",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "不需要，門票三天有效，只要在國家公園內連續停留即可。 必須保留門票直至離開庫爾斯沙嘴。",
+      "markup" : "plain",
+      "key" : "_nv4xaq9zr"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/8ZoN3QnPRNeduT5Z.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"GOOGLE_ASSISTANCE\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "No need, the ticket is valid.mp3",
+      "uploadDate" : 1698340264357,
+      "key" : "_82jyljmn0"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Chinese/Root/搭乘普通公車到達的遊客如何購買門票，在什麼情況下不能購買門票？",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "普通巴士的乘客只能在網路上購買門票——在國家公園網站上，要進入線上支付網站，需要點擊「付費參觀」。 要參觀國家公園的生態步道、路線和其他景點，必須這樣做。 如果乘客為其他目的前往庫爾斯沙嘴，例如前往其中一個村莊購買門票，夏季時可搭乘 593 號巴士從加里寧格勒開往庫爾斯沙嘴。",
+      "markup" : "plain",
+      "key" : "_1skc8a16r"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/TbaITutvXYjF3OrZ.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"GOOGLE_ASSISTANCE\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Passengers of regular buses.mp3",
+      "uploadDate" : 1698340417532,
+      "key" : "_t6rhzt4dd"
+    } ]
+  }, {
     "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Где на Куршской косе можно разместиться с палаткой?",
     "replies" : [ {
       "type" : "text",
@@ -627,6 +741,48 @@
       "audioName" : "Yes, each entry into the national park.mp3",
       "uploadDate" : 1698300795070,
       "key" : "_7o75ghy9h"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Chinese/Root/如何前往庫爾斯沙嘴？ 我們到達了澤列諾格拉茨克的檢查站，接下來要去哪裡？",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "參觀庫爾斯沙嘴的主要景點需要交通。 您可以搭乘汽車、旅遊巴士或普通巴士出遊。 有停車場。 旅遊團的短途旅行必須提前在加里寧格勒的任何一家旅行社預訂； 210路常規巴士從澤列諾格拉茨克車站出發； 夏季，593 號公車從加里寧格勒開往沙嘴。",
+      "markup" : "plain",
+      "key" : "_n5d5ijces"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/6EkEjh2Re7lN6kbn.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"GOOGLE_ASSISTANCE\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Transportation is required to see.mp3",
+      "uploadDate" : 1698340314931,
+      "key" : "_wul4bifho"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Chinese/Root/如何前往庫爾斯沙嘴遊覽？",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "要遊覽國家公園，您需要提前在加里寧格勒的任何一家旅行社報名參加團體活動，或預訂乘坐汽車/小巴離開加里寧格勒或該地區度假小鎮的個人遊覽活動。\n如需參觀遊客中心大廳和兒童團體主題課程，請致電環境教育部門：8 4012 310028。",
+      "markup" : "plain",
+      "key" : "_h06ytai54"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/KLWNUrX86sht06B4.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"GOOGLE_ASSISTANCE\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "To visit the national park with.mp3",
+      "uploadDate" : 1698340374125,
+      "key" : "_ugwkjakbl"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Chinese/Root/每次進入國家公園都需要買票嗎？",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "是的，每次進入國家公園都必須付費併購買門票。",
+      "markup" : "plain",
+      "key" : "_5sz1mepki"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/2hD4nhgjFFbhwZ08.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"GOOGLE_ASSISTANCE\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Yes, each entry into the national park.mp3",
+      "uploadDate" : 1698340460122,
+      "key" : "_eqmk00byc"
     } ]
   } ],
   "skills" : [ ]
