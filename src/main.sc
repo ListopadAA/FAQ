@@ -108,6 +108,9 @@ theme: /
     
     state: English
         
+        state: newQ
+            a: Ask a question
+        
         state: begin
             a: Salute! I am the bat-Kosichka, it is my subspecies that lives on the Curonian Spit and is listed in the Red Book. I am a chatbot for the developers of the “Khalyavy ne budet” team. Ask a question you are interested in
 
@@ -126,11 +129,15 @@ theme: /
                 \n* You also cannot collect mushrooms, berries and medicinal plants
             a: We will be glad to see you in our reserve!
             a: See you soon!
+            a: Do you want to change the bot language?
+            buttons:
+                "Continue in English" -> /English/newQ
+                "Change language" -> /Language
     
         state: NoMatch
             event: noMatch
             if: $session.Q.indexOf($request.query) > -1
-                a: Кажется, Вы мне спамите...
+                a: It seems you are spamming me...
                 go!: /English
             a: Oops, your question is not in the list of frequently asked questions...
             script:
@@ -169,7 +176,7 @@ theme: /
             Email:
                 destination = listopad053@gmail.com
                 subject = Вопрос бота
-                text = Email отправителя: {{$session.mail}} \n {{$session.question}}
+                text = Доброго времени суток! Меня заинтересовал следующий вопрос: {{$session.question}}\n\nПрошу отправить мне ответ на почту: {{$session.mail}}\nСпасибо! Всего хорошего!
                 files = []
                 html = Email отправителя: {{$session.mail}} \n {{$session.question}}
                 htmlEnabled = false
@@ -180,6 +187,9 @@ theme: /
                 go!: /English/bye
     
     state: Chinese
+        
+        state: newQ
+            a: 問一個問題
         
         state: begin
             a: 禮炮！ 我是蝙蝠 Kosichka，它是我的亞種，生活在庫爾斯沙嘴上，並被列入紅皮書。 我是「Khalyavy ne budet」團隊開發人員的聊天機器人。 問一個你感興趣的問題
@@ -199,10 +209,19 @@ theme: /
                 \n* 你也不能採集蘑菇、漿果和藥用植物
             a: 我們很高興在我們的保護區見到您！
             a: 再見！
+            a: 您想更改機器人語言嗎？
+            buttons:
+                "繼續中文" -> /Chinese/newQ
+                "改變語言" -> /Language
     
         state: NoMatch
             event: noMatch
+            if: $session.Q.indexOf($request.query) > -1
+                a: 看來你在寄垃圾郵件給我...
+                go!: /Chinese
             a: 糟糕，您的問題不在常見問題清單中...
+            script:
+                $session.Q.push(String($request.query))
             go!: /Chinese/emailButtons
     
         state: KnowledgeBase
@@ -237,7 +256,7 @@ theme: /
             Email:
                 destination = listopad053@gmail.com
                 subject = Вопрос бота
-                text = Email отправителя: {{$session.mail}} \n {{$session.question}}
+                text = Доброго времени суток! Меня заинтересовал следующий вопрос: {{$session.question}}\n\nПрошу отправить мне ответ на почту: {{$session.mail}}\nСпасибо! Всего хорошего!
                 files = []
                 html = Email отправителя: {{$session.mail}} \n {{$session.question}}
                 htmlEnabled = false
