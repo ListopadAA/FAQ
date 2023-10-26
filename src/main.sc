@@ -129,7 +129,12 @@ theme: /
     
         state: NoMatch
             event: noMatch
+            if: $session.Q.indexOf($request.query) > -1
+                a: Кажется, Вы мне спамите...
+                go!: /English
             a: Oops, your question is not in the list of frequently asked questions...
+            script:
+                $session.Q.push(String($request.query));
             go!: /English/emailButtons
     
         state: KnowledgeBase
