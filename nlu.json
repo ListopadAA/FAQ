@@ -27,7 +27,9 @@
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "попа"
+      "text" : "злюка"
+    }, {
+      "text" : "вонючка"
     } ],
     "classificationRules" : {
       "refs" : [ ]

@@ -4,14 +4,26 @@ theme: /
 
     state: Language
         q!: $regex</start>
+        script:
+            $session.Q = [];
         a: Выберите язык
         buttons:
-            "Русский" -> /Russian
-            "English" -> /English
-            "中國人" -> /Chinese
+            "Русский" -> /Russian/begin
+            "English" -> /English/begin
+            "中國人" -> /Chinese/begin
+        
 
     state: Russian
-        a: Салют! Я - летучая мышка-Косичка, именно мой подвид проживает на Куршской косе и внесён в Красную книгу. Я чат-бот разработчиков команды "Халявы не будет". Задайте интересующий Вас вопрос
+        
+        
+        if: $session.Q.count($request.query) > 2
+            a: Кажется, Вы мне спамите...
+        
+        state: newQ
+            a: Задайте интересующий вопрос
+        
+        state: begin
+            a: Салют! Я - летучая мышка-Косичка, именно мой подвид проживает на Куршской косе и внесён в Красную книгу. Я чат-бот разработчиков команды "Халявы не будет". Задайте интересующий Вас вопрос
 
         state: censoring
             intent: /цензура
@@ -36,10 +48,18 @@ theme: /
                 \n* Также нельзя собирать грибы, ягоды и лекарственные растения
             a: Будем рады увидеть Вас в нашем заповеднике!
             a: До скорых встреч!
+            
+            a: Хотите сменить язык бота?
+            buttons:
+                "Нет, продолжить на русском" -> /Russian/newQ
+                "Сменить язык" -> /Language
     
         state: NoMatch
             event: noMatch
             a: Упс, вашего вопроса нет в списке часто задаваемых вопросов...
+            script:
+                $session.Q.push($request.query);
+            
             go!: /Russian/emailButtons
     
         state: KnowledgeBase
@@ -74,7 +94,7 @@ theme: /
             Email:
                 destination = listopad053@gmail.com
                 subject = Вопрос бота
-                text = Email отправителя: {{$session.mail}} \n {{$session.question}}
+                text = Доброго времени суток! Меня заинтересовал следующий вопрос: {{$session.question}} \n\n Прошу отправить мне ответ на почту: {{$session.mail}}\nСпасибо! Всего хорошего!
                 files = []
                 html = Email отправителя: {{$session.mail}} \n {{$session.question}}
                 htmlEnabled = false
@@ -86,7 +106,9 @@ theme: /
                 
     
     state: English
-        a: Salute! I am the bat-Kosichka, it is my subspecies that lives on the Curonian Spit and is listed in the Red Book. I am a chatbot for the developers of the “Khalyavy ne budet” team. Ask a question you are interested in
+        
+        state: begin
+            a: Salute! I am the bat-Kosichka, it is my subspecies that lives on the Curonian Spit and is listed in the Red Book. I am a chatbot for the developers of the “Khalyavy ne budet” team. Ask a question you are interested in
 
         state: Hello
             intent: /hello
@@ -152,7 +174,9 @@ theme: /
                 go!: /English/bye
     
     state: Chinese
-        a: 禮炮！ 我是蝙蝠 Kosichka，它是我的亞種，生活在庫爾斯沙嘴上，並被列入紅皮書。 我是「Khalyavy ne budet」團隊開發人員的聊天機器人。 問一個你感興趣的問題
+        
+        state: begin
+            a: 禮炮！ 我是蝙蝠 Kosichka，它是我的亞種，生活在庫爾斯沙嘴上，並被列入紅皮書。 我是「Khalyavy ne budet」團隊開發人員的聊天機器人。 問一個你感興趣的問題
 
         state: Hello
             intent: /sys/aimylogic/zh/hello
