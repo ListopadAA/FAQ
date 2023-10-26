@@ -47,6 +47,14 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
+    "path" : "/KnowledgeBase/FAQ.Chinese",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
     "path" : "/пока",
     "enabled" : true,
     "shared" : false,
@@ -63,10 +71,15 @@
     "shared" : false,
     "phrases" : [ {
       "text" : "привет"
+    }, {
+      "text" : "здравствуйте"
+    }, {
+      "text" : "приветствую"
     } ],
     "classificationRules" : {
       "refs" : [ ]
     },
+    "patterns" : [ ],
     "priority" : 0
   }, {
     "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как попасть на экскурсию на Куршскую косу?",
@@ -121,17 +134,18 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "path" : "/KnowledgeBase/FAQ.EnglishQ/Root/Новый вопрос",
+    "path" : "/KnowledgeBase/FAQ.EnglishQ/Root/On what days and at what time is the Curonian Spit National Park open to the public?",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
       "text" : "New question"
     }, {
-      "text" : "Новый вопрос"
+      "text" : "On what days and at what time is the Curonian Spit National Park open to the public?"
     } ],
     "classificationRules" : {
       "refs" : [ ]
     },
+    "patterns" : [ ],
     "priority" : 0
   }, {
     "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как покупать входные билеты посетителям, въезжающим на рейсовых автобусах, и в каких случаях им можно не покупать билеты?",
@@ -152,6 +166,108 @@
     "classificationRules" : {
       "refs" : [ ]
     },
+    "priority" : 0
+  }, {
+    "path" : "/до свидания",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "До свидания"
+    }, {
+      "text" : "Пока"
+    }, {
+      "text" : "До свиданья"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.EnglishQ/Root/Where on the Curonian Spit can you camp with a tent?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Where on the Curonian Spit can you camp with a tent?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.EnglishQ/Root/If you arrive in the evening and stay overnight on the Curonian Spit, do you need to buy an entrance ticket to the park again the next day?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "If you arrive in the evening and stay overnight on the Curonian Spit, do you need to buy an entrance ticket to the park again the next day?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.EnglishQ/Root/How to buy entrance tickets for visitors arriving on regular buses, and in what cases can they not buy tickets?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "How to buy entrance tickets for visitors arriving on regular buses, and in what cases can they not buy tickets?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.EnglishQ/Root/How to get to the Curonian Spit? We arrived at the checkpoint in Zelenogradsk, where to go next?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "How to get to the Curonian Spit? We arrived at the checkpoint in Zelenogradsk, where to go next?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.EnglishQ/Root/How to get on an excursion to the Curonian Spit?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "How to get on an excursion to the Curonian Spit?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Chinese/Root/庫爾斯沙嘴國家公園在哪一天、什麼時間對外開放？",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "New question"
+    }, {
+      "text" : "庫爾斯沙嘴國家公園在哪一天、什麼時間對外開放？"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.EnglishQ/Root/Do I need to buy an entrance ticket every time I enter the national park?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Do I need to buy an entrance ticket every time I enter the national park?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
     "priority" : 0
   } ],
   "entities" : [ ],
@@ -267,6 +383,12 @@
       "text" : "Организовывать туристическую стоянку на Куршской косе запрещено! В дневное время можно ставить палатку или параван на берегу моря для защиты от солнца и ветра. Ставить палатку для ночлега можно только в специально организованных для этого местах: на территории турбаз, туркемпингов и гостевых домов, на пикниковом месте возле озера Чайка (32-й км).",
       "markup" : "plain",
       "key" : "_rjwzyc706"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/YIlTUNyN6dr4Za6Y.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Организовывать туристическую стоянку.mp3",
+      "uploadDate" : 1698256633727,
+      "key" : "_9xgi38m2s"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Если приехать вечером и разместиться на Куршской косе на ночлег, нужно ли на следующий день снова покупать входной билет в парк?",
@@ -275,7 +397,16 @@
       "text" : "Не нужно, билет действует трое суток при условии непрерывного пребывания на территории национального парка. Билет необходимо сохранять до момента выезда с Куршской косы.",
       "markup" : "plain",
       "key" : "_pfjfyf87t"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/zMo9zg7tMIxf3dTj.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Не нужно, билет действует.mp3",
+      "uploadDate" : 1698256651310,
+      "key" : "_t356vzmom"
     } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Chinese",
+    "replies" : [ ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как попасть на экскурсию на Куршскую косу?",
     "replies" : [ {
@@ -283,6 +414,12 @@
       "text" : "Чтобы посетить национальный парк с экскурсией, нужно заранее записаться в группу в любой из калининградских турфирм или заказать индивидуальную экскурсию на автомобиле/микроавтобусе с выездом из Калининграда или курортных городов области. \nЭкскурсию по залам Визит-центра и тематические занятия для детских групп можно заказать, позвонив в отдел экопросвещения 8 4012 310028.",
       "markup" : "plain",
       "key" : "_q9uo1ymuh"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/KCgs4ckkzOAxVkzd.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Чтобы посетить национальный парк.mp3",
+      "uploadDate" : 1698256721000,
+      "key" : "_u3fz6oa0t"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/В какие дни и в какое время национальный парк «Куршская коса» открыт для посещения?",
@@ -291,6 +428,12 @@
       "text" : "Национальный парк открыт для посещения 24/7 – круглосуточно и круглогодично. Визит-центр, расположенный на 14 км косы, открыт с 9 до 17 часов: с мая по сентябрь ежедневно, с октября по апрель – со среды по воскресенье. \nПолевой стационар кольцевания птиц открыт для посещения с апреля по октябрь с 10 до 17 часов.",
       "markup" : "plain",
       "key" : "_dqs870tey"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/GwZLQBT4MjxrydzS.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Национальный парк открыт.mp3",
+      "uploadDate" : 1698255665994,
+      "key" : "_oka5sptbv"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как попасть на Куршскую косу? Мы приехали на КПП в Зеленоградск, куда идти дальше?",
@@ -299,6 +442,12 @@
       "text" : "Для осмотра основных достопримечательностей на Куршской косе требуется транспорт. Можно перемещаться на автомобиле, туристическом или рейсовом автобусе. Есть парковки. Экскурсию в составе туристической группы нужно заказывать заранее в любой из калининградских турфирм, рейсовый автобус № 210 отправляется от вокзала в Зеленоградске, в летний сезон из Калининграда на косу ходит автобус № 593.",
       "markup" : "plain",
       "key" : "_imkvm04a2"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/RCYzyNjdqrnQROCv.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Для осмотра основных достопримечательностей.mp3",
+      "uploadDate" : 1698256689485,
+      "key" : "_uk8zdwpe4"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Нужно ли каждый раз покупать входной билет при въезде на территорию национального парка?",
@@ -307,13 +456,26 @@
       "text" : "Да, каждый въезд на территорию национального парка необходимо оплачивать и покупать входной билет.",
       "markup" : "plain",
       "key" : "_a0xwkjson"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/BnDdtPY6P1nGIx6j.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Да, каждый въезд.mp3",
+      "uploadDate" : 1698256837301,
+      "key" : "_h0gpp31yf"
     } ]
   }, {
-    "intentPath" : "/KnowledgeBase/FAQ.EnglishQ/Root/Новый вопрос",
+    "intentPath" : "/KnowledgeBase/FAQ.EnglishQ/Root/On what days and at what time is the Curonian Spit National Park open to the public?",
     "replies" : [ {
       "type" : "text",
-      "text" : "",
-      "markup" : "plain"
+      "text" : "The national park is open to the public 24/7 – around the clock and all year round. The visitor center, located at 14 km of the spit, is open from 9 am to 5 pm: from May to September daily, from October to April - from Wednesday to Sunday.\nThe bird banding field station is open to the public from April to October from 10 a.m. to 5 p.m.",
+      "markup" : "plain",
+      "key" : "_enl4k39bl"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/MGjuC0kxswZmKg7L.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "The national park is open.mp3",
+      "uploadDate" : 1698300368884,
+      "key" : "_qz2syql58"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Как покупать входные билеты посетителям, въезжающим на рейсовых автобусах, и в каких случаях им можно не покупать билеты?",
@@ -322,10 +484,114 @@
       "text" : "Пассажиры рейсовых автобусов могут купить входной билет только онлайн – на сайте национального парка для перехода на сайт онлайн-оплаты нужно нажать «оплатить посещение». Для посещения экологических троп, маршрутов и других объектов национального парка это нужно сделать обязательно. Если пассажир едет на Куршскую косу с иными целями, например, в какой-то из поселков, покупать входной билет, в летний сезон из Калининграда на косу ходит автобус № 593.",
       "markup" : "plain",
       "key" : "_ajq7auwmi"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/GgOkdOraYx5L0yF2.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Пассажиры рейсовых автобусов.mp3",
+      "uploadDate" : 1698256671068,
+      "key" : "_13c6qhpif"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.EnglishQ",
     "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.EnglishQ/Root/Where on the Curonian Spit can you camp with a tent?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Organizing a tourist stop on the Curonian Spit is prohibited! During the daytime, you can put up a tent or paravan on the seashore for protection from the sun and wind. You can put up a tent for the night only in places specially organized for this: on the territory of tourist centers, tourist camps and guest houses, at a picnic site near Lake Chaika (32nd km).",
+      "markup" : "plain",
+      "key" : "_mnx5u5kcg"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/AbwBCJP57uXAVdpk.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Organizing a tourist stop on the Curonian.mp3",
+      "uploadDate" : 1698300479389,
+      "key" : "_03modhgga"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.EnglishQ/Root/If you arrive in the evening and stay overnight on the Curonian Spit, do you need to buy an entrance ticket to the park again the next day?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "No need, the ticket is valid for three days subject to continuous stay in the national park. The ticket must be kept until departure from the Curonian Spit.",
+      "markup" : "plain",
+      "key" : "_ophf327t8"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/fhEExNWWYHW75Lbv.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "No need, the ticket is valid.mp3",
+      "uploadDate" : 1698300544179,
+      "key" : "_qjofhrjlf"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.EnglishQ/Root/How to buy entrance tickets for visitors arriving on regular buses, and in what cases can they not buy tickets?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Passengers of regular buses can buy an entrance ticket only online - on the national park website, to go to the online payment site, you need to click “pay for visit”. To visit ecological trails, routes and other sites of the national park, this must be done. If a passenger goes to the Curonian Spit for other purposes, for example, to one of the villages, to buy an entrance ticket, in the summer season bus No. 593 runs from Kaliningrad to the spit.",
+      "markup" : "plain",
+      "key" : "_1gec18nd9"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/P72dSjsnM26perPq.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Passengers of regular buses.mp3",
+      "uploadDate" : 1698300582854,
+      "key" : "_uttckle44"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.EnglishQ/Root/How to get to the Curonian Spit? We arrived at the checkpoint in Zelenogradsk, where to go next?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Transportation is required to see the main attractions on the Curonian Spit. You can travel by car, tourist or regular bus. There are parking lots. An excursion as part of a tourist group must be booked in advance at any of the Kaliningrad travel agencies; regular bus No. 210 departs from the station in Zelenogradsk; in the summer season, bus No. 593 runs from Kaliningrad to the spit.",
+      "markup" : "plain",
+      "key" : "_6vt18k28a"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/rq1AHNB3OoL7Uuwt.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Transportation is required to see.mp3",
+      "uploadDate" : 1698300672147,
+      "key" : "_ytoah8mku"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.EnglishQ/Root/How to get on an excursion to the Curonian Spit?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "To visit the national park with an excursion, you need to sign up in advance for a group with any of the Kaliningrad travel agencies or order an individual excursion by car/minibus leaving Kaliningrad or resort towns in the region.\nA tour of the halls of the Visitor Center and thematic classes for children’s groups can be ordered by calling the environmental education department at 8 4012 310028.",
+      "markup" : "plain",
+      "key" : "_482bmw6sl"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/IRkHp8Trkq4dpqLt.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "To visit the national park.mp3",
+      "uploadDate" : 1698300738032,
+      "key" : "_uu2admbe7"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Chinese/Root/庫爾斯沙嘴國家公園在哪一天、什麼時間對外開放？",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "國家公園全年 24/7 全天候對外開放。遊客中心位於沙嘴 14 公里處，開放時間為上午 9 點至下午 5 點：五月至九月每天，十月至四月週三至週日。\n鳥類環志野外站於 4 月至 10 月上午 10 點至下午 5 點對外開放。",
+      "markup" : "plain",
+      "key" : "_rc2qrxv56"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/yAo3ZBgW98UwUioo.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"GOOGLE_ASSISTANCE\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "The national park is open to the public 247.mp3",
+      "uploadDate" : 1698302574802,
+      "key" : "_u20flgo47"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.EnglishQ/Root/Do I need to buy an entrance ticket every time I enter the national park?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Yes, each entry into the national park must be paid and an entrance ticket must be purchased.",
+      "markup" : "plain",
+      "key" : "_bps2oc612"
+    }, {
+      "type" : "audio",
+      "audioUrl" : "https://248305.selcdn.ru/zfl_prod/1000111458/278327489/audio/d2HLnRivQZh3eOib.mp3?channels={\"incompatible\":[\"OUTGOING_CALLS\",\"GOOGLE_ASSISTANCE\",\"ALEXA\"],\"compatible\":[\"VK\",\"FACEBOOK\",\"TELEGRAM\",\"WHATSAPP\",\"AIMYBOX\",\"ALISA\"]}",
+      "audioName" : "Yes, each entry into the national park.mp3",
+      "uploadDate" : 1698300795070,
+      "key" : "_7o75ghy9h"
+    } ]
   } ],
   "skills" : [ ]
 }
