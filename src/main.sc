@@ -13,6 +13,14 @@ theme: /
     state: Russian
         a: Салют! Я - летучая мышка-Косичка, именно мой подвид проживает на Куршской косе и внесён в Красную книгу. Я чат-бот разработчиков команды "Халявы не будет". Задайте интересующий Вас вопрос
 
+        state: censoring
+            intent: /цензура
+            a: Ой, ругаться плохо, попробуйте сформулировать запрос ещё разок
+        
+        state: spam
+            intent: /спам
+            a: Кажется, это спам...
+
         state: Hello
             intent: /привет
             a: Привет привет
@@ -28,55 +36,17 @@ theme: /
                 \n* Также нельзя собирать грибы, ягоды и лекарственные растения
             a: Будем рады увидеть Вас в нашем заповеднике!
             a: До скорых встреч!
-            EndSession:
     
         state: NoMatch
             event: noMatch
-            script:
-                # $parseTree.words — массив всех слов, обнаруженных в запросе.
-                # Преобразуем его из списка строк в список объектов нужного вида.
-                var words = $parseTree.words.map(function(string) {
-                    return {word: string};
-                });
-        
-                # Определяем для каждого слова, является ли оно словарным.
-                var wordsInVocab = $caila.checkVocabulary(words);
-        
-                # Увеличиваем счетчик нераспознанных реплик только в том случае,
-                # если хотя бы одно слово из запроса нашлось в словаре.
-                if (wordsInVocab.indexOf(true) > -1) {
-                    $session.catchAllCounter = $session.catchAllCounter + 1 || 1;
-                }
-            # Если счетчик нераспознанных реплик превысил порог, переводим на оператора.
-            if: $session.catchAllCounter > 1
-                random:
-                    a: Извините, я не расслышала. Повторите, пожалуйста.
-                    a: Не совсем поняла. Можете повторить, пожалуйста?
-                    a: Повторите, пожалуйста. Вас плохо слышно.
-            else:  
-                a: Упс, вашего вопроса нет в списке часто задаваемых вопросов...
-                go!: /Russian/emailButtons
+            a: Упс, вашего вопроса нет в списке часто задаваемых вопросов...
+            go!: /Russian/emailButtons
     
         state: KnowledgeBase
             intentGroup: /KnowledgeBase/FAQ.Пустой шаблон
             script:
                 $faq.pushReplies();
             go!: /Russian/bye
-        
-        state: Statistics
-            GoogleSheets:
-                operationType = writeDataToCells
-                integrationId = b8a21fc4-153e-439a-abb5-2586a03d42bb
-                spreadsheetId = 1UTUIieB-JgWRZ_Nt8CJAGFck-EkFqsfxR5od693dfoY
-                sheetName = kosichka
-                body =
-                    [
-                        {
-                            "cell": "A1",
-                            "values": ["р"]
-                        }
-                    ]
-                okState = /Russian/bye
     
         state: noEmail
             a: К сожалению, я ничем не могу Вам помочь. Чтобы узнать ответ на вопрос напишите нам на почту: office@park-kosa.ru
@@ -133,7 +103,6 @@ theme: /
                 \n* You also cannot collect mushrooms, berries and medicinal plants
             a: We will be glad to see you in our reserve!
             a: See you soon!
-            EndSession:
     
         state: NoMatch
             event: noMatch
@@ -200,7 +169,6 @@ theme: /
                 \n* 你也不能採集蘑菇、漿果和藥用植物
             a: 我們很高興在我們的保護區見到您！
             a: 再見！
-            EndSession:
     
         state: NoMatch
             event: noMatch

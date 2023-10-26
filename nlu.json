@@ -23,6 +23,36 @@
     }
   },
   "intents" : [ {
+    "path" : "/цензура",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "попа"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/спам",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "как дела"
+    }, {
+      "text" : "что делаешь"
+    }, {
+      "text" : "как жизнь"
+    }, {
+      "text" : "сколько тебе лет"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
     "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Где на Куршской косе можно разместиться с палаткой?",
     "enabled" : true,
     "shared" : false,
