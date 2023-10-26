@@ -16,8 +16,6 @@ theme: /
     state: Russian
         
         
-        if: $session.Q.count($request.query) > 2
-            a: Кажется, Вы мне спамите...
         
         state: newQ
             a: Задайте интересующий вопрос
@@ -56,9 +54,12 @@ theme: /
     
         state: NoMatch
             event: noMatch
+            if: $session.Q.indexOf($request.query) > -1
+                a: Кажется, Вы мне спамите...
+                go!: /Russian
             a: Упс, вашего вопроса нет в списке часто задаваемых вопросов...
             script:
-                $session.Q.push($request.query);
+                $session.Q.push(String($request.query));
             
             go!: /Russian/emailButtons
     
@@ -94,7 +95,7 @@ theme: /
             Email:
                 destination = listopad053@gmail.com
                 subject = Вопрос бота
-                text = Доброго времени суток! Меня заинтересовал следующий вопрос: {{$session.question}} \n\n Прошу отправить мне ответ на почту: {{$session.mail}}\nСпасибо! Всего хорошего!
+                text = Доброго времени суток! Меня заинтересовал следующий вопрос: {{$session.question}}\n\nПрошу отправить мне ответ на почту: {{$session.mail}}\nСпасибо! Всего хорошего!
                 files = []
                 html = Email отправителя: {{$session.mail}} \n {{$session.question}}
                 htmlEnabled = false
